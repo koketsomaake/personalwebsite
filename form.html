@@ -1,0 +1,95 @@
+<!-- <html>
+
+<head>
+
+    <script type="text/javascript">
+
+        function validate() {
+            var name = document.getElementById("input-name");
+            var email = document.getElementById("input-email");
+            var subject = document.getElementById("input-subject");
+
+
+            if (Name.value == "" || Email.value == "" || Subject.value == "") {
+                alert("fill up empty spaces");
+                return false;
+            }
+            else {
+                true;
+            }
+
+
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styleform.css">
+    <title>Email me</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Contact Me</h1>
+        <form onsubmit="return validate()" action="mailto:koketso.maake@umuzi.org">
+
+            <input id="input-name" placeholder="Name" type="text" />
+            <input id="input-name" placeholder="Email" type="text" />
+            <input id="input-name" placeholder="Subject" type="text" />
+
+            <br><br>
+            <button onclick="validate()" type="submit">Submit</button>
+
+        </form>
+</body>
+
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styleform.css">
+    <title>Email me</title>
+    <link rel="stylesheet" href="form.css">
+
+    <script type="text/javascript">
+        function validate() {
+            var Name = document.getElementById("input-name");
+            var Email = document.getElementById("input-email");
+            var Subject = document.getElementById("input-subject");
+            if (Name.value == "" || Email.value == "" || Subject.value == "") {
+                alert("No blank values allowed")
+            }
+            else {
+
+            }
+        }
+
+
+    </script>
+</head>
+
+<body>
+    <form action="mailto:koketso.maake@umuzi.org">
+        <h1>Contact Me</h1>
+        <div class="border">
+            <div class="input">
+                <input id="input-name" placeholder="Name" type="text" />
+                <input id="input-email" placeholder="Email" type="text" />
+                <input id="input-subject" placeholder="Subject" type="text" />
+                <br><br>
+                <button onclick="validate()" type="submit">submit</button>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-attachment: fixed;
+    background-image: url(/image/How-to-Get-More-Productivity-From-a-Larger-Team-1180x664.jpg);
+    background-repeat: no-repeat;   
+}
+
+.input{
+background: transparent;
+border: none;
+border-bottom: 3px solid white;
+    width: 50%;
+    padding: 1px;
+    margin-top: 9px;
+    margin-bottom: 32px;
+    resize: vertical;
+}
+
+.border{
+background-color: blue;
+color: white;
+border: 1px solid blue;
+border-radius: 6px;
+cursor: pointer;
+}
+input[type=submit]:hover{
+    background-color:b white;
+}
+
+.container{
+    border-radius: 10px;
+ padding: 20px;
+    background-color: rgba(0, 0, 255, 0.394);
+}
+.main
+{
+   display: grid;
+   grid-template-columns: repeat(24, 1fr);
+   grid-template-rows: repeat(30, 40px);
+}
+
+h1{
+    text-align: center;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    top: 10px;
+}
+
+.container
+{
+    text-align: center;
+    position: relative;
+    top: 10px;
+}
+
+.form{
+    position: relative;
+    top: 20px;
+
+}
+
+.HEADER
+{
+    grid-column: 1 / -1;
+    grid-row: 2 / 2;
+    /* background-color: black;  */
+   
+}
+
+.MENU
+{
+    grid-column: 1 / 6;
+    grid-row: 9 / 5;
+    
+    /* background-color: black; */
+  
+}
+
+
+.CONTENT
+{
+    
+    grid-column: 1 / -1;
+    grid-row: 9 / 20;
+    /* background-color: black; */
+    
+}
+
+
+
+.FOOTER
+{
+  border-top:1px solid white;
+    grid-column: 1 / -1;
+    grid-row: 28/ -1;
+    /* background-color: black; */
+}
+
+
+
