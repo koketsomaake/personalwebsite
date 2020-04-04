@@ -1,95 +1,65 @@
-<!-- <html>
-
-<head>
-
-    <script type="text/javascript">
-
-        function validate() {
-            var name = document.getElementById("input-name");
-            var email = document.getElementById("input-email");
-            var subject = document.getElementById("input-subject");
-
-
-            if (Name.value == "" || Email.value == "" || Subject.value == "") {
-                alert("fill up empty spaces");
-                return false;
-            }
-            else {
-                true;
-            }
-
-
-    </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="styleform.css">
-    <title>Email me</title>
-    <link rel="stylesheet" href="form.css">
-</head>
-
-<body>
-    <div class="container">
-        <h1>Contact Me</h1>
-        <form onsubmit="return validate()" action="mailto:koketso.maake@umuzi.org">
-
-            <input id="input-name" placeholder="Name" type="text" />
-            <input id="input-name" placeholder="Email" type="text" />
-            <input id="input-name" placeholder="Subject" type="text" />
-
-            <br><br>
-            <button onclick="validate()" type="submit">Submit</button>
-
-        </form>
-</body>
-
-</html> -->
-
-
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
+    <head>
+        <meta charset="UIF 8">
+        <meta name="viewport" content-type="width=device initial-scale=1">
+        <title>Form</title>  
+      <link rel="stylesheet" type="text/css" href="index.css">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="styleform.css">
-    <title>Email me</title>
-    <link rel="stylesheet" href="form.css">
+      <script type="text/javascript">
+      
+      function validation(){
+        var name = document.getElementById("name");
+        var subject = document.getElementById("subject");
+        var phone = document.getElementById("phone");
+        var email = document.getElementById("email");
+        var message = document.getElementById("message");
 
-    <script type="text/javascript">
-        function validate() {
-            var Name = document.getElementById("input-name");
-            var Email = document.getElementById("input-email");
-            var Subject = document.getElementById("input-subject");
-            if (Name.value == "" || Email.value == "" || Subject.value == "") {
-                alert("No blank values allowed")
-            }
-            else {
 
-            }
+
+        if(name.value.trim() =="" ||subject.value.trim()=="" ||phone.value.trim()=="" 
+        ||email.value.trim()=="" ||message.value.trim()==""){
+            alert("No blank spaces allowed");
+            return false;
+        }
+        else
+        {
+            true;
         }
 
+        
 
-    </script>
-</head>
+      } 
+      
+      </script> 
 
+
+
+    </head>
 <body>
-    <form action="mailto:koketso.maake@umuzi.org">
-        <h1>Contact Me</h1>
-        <div class="border">
-            <div class="input">
-                <input id="input-name" placeholder="Name" type="text" />
-                <input id="input-email" placeholder="Email" type="text" />
-                <input id="input-subject" placeholder="Subject" type="text" />
-                <br><br>
-                <button onclick="validate()" type="submit">submit</button>
+<div class="wrapper">
+    <h2>Contact Me</h2>
+    
+    <form action="mailto:koketso.maake@umuzi.org" onsubmit="return validation()">
+        <div class="input_field">
+            <input type="text" placeholder="Name" id="name">
             </div>
-        </div>
-    </form>
+            <div class="input_field">
+            <input type="text" placeholder="Subject" id="subject">
+            </div>
+            <div class="input_field">
+            <input type="text" placeholder="Phone" id="phone">
+            </div>
+            <div class="input_field">
+            <input type="text" placeholder="Email" id="email">
+            </div>
+            <div class="input_field">
+            <textarea id="message" placeholder="Message"></textarea>
+            </div>
+            <div class="btn">
+            <input type="submit">
+            </div>
+            
+        </form>	
+    </div>
 </body>
-
-</html>
