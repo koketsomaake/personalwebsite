@@ -1,0 +1,240 @@
+.maincontainer {
+    height: 100%;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 40px auto 40px;
+    grid-template-areas: 
+        "h h h h h h h h h h h h"
+        "c c c c c c c c c c c c"
+        "f f f f f f f f f f f f";
+}
+
+.header {
+    grid-area: h;
+
+}
+
+.menu {
+    grid-area: m;
+}
+
+.content {
+    grid-area: c;
+}
+
+.footer {
+    grid-area: f;
+}
+
+
+
+.maincontainer{
+    background-color: rgba(2, 8, 27, 0.808);
+}
+
+
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'josefin', sans-serif;
+
+}
+    
+
+p{
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 70px;
+    color: rgb(255, 255, 255);
+}
+
+h1.title{
+    margin-bottom: 20px;
+    color: #ffffff;
+    /* font-family: 'Courgette', cursive; */
+    text-transform: uppercase;
+    font-size: 38px;
+    word-spacing: 25px;
+    letter-spacing: 5px;
+}
+
+.btn{
+    position: relative;
+    top: 80px;
+}
+
+.btn a{
+    display: block;
+    width: 180px;
+    height: 35px;
+    border: 2px solid rgba(2, 8, 27, 0.808);
+    line-height: 35px;
+    margin: 25px auto 0;
+    color: rgba(255, 255, 255, 0.808);
+    text-align: center;
+    background-color: rgba(2, 8, 27, 0.808);
+    
+}
+
+.main_container{
+    position: relative;
+}
+
+/* navigation bar */
+.navbar{
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* position: absolute; */
+}
+
+.logo a{
+    /* font-family: 'allura', cursive;
+    font-size: 32px;
+    color: thistle; */
+    width: 50%;
+    margin-bottom: 20px;
+    
+}
+
+.navbar .navbar_items ul{
+    display: flex;
+    margin: 0 10px;
+}
+
+.navbar .navbar_items ul li{
+    text-transform: uppercase;
+    margin: 0 10px;
+
+}
+
+.navbar .navbar_items ul li a{
+    color: rgb(255, 255, 255);
+}
+
+.banner_image{
+    background: url("images/How-to-Get-More-Productivity-From-a-Larger-Team-1180x664.png")
+    no-repeat top center;
+    background-size: cover;
+    width: 100%;
+    height: 670px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgba(0, 0, 0, 0.356); */
+
+}
+
+.banner_content{
+    text-align: center;
+    font-size: 100px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(209, 196, 13);
+}
+
+.banner_content h1{
+    text-transform: uppercase;
+    line-height: 38px;
+    margin-bottom: 15px;
+}
+
+.banner_content h1 span{
+    color: rgb(255, 255, 255);
+}
+
+.about, .skills, .Contact, .portfolio, .interest{
+    padding: 5% 10%;
+    text-align: center;
+}
+
+/* SKILLS */
+
+
+.diff_skills{
+    display: flex;
+    margin-top: 35px;
+}
+
+.diff_skills_items{
+    width: 30%;
+}
+
+.diff_skills_items img{
+    width: 60%;
+    margin-bottom: 20px;
+}
+
+/* .portfolio_ref ul li{
+    text-align: justify; 
+  -moz-text-align-last: justify; 
+ text-align-last: justify;
+} */
+/* .portfolio_ref{
+    width: 30%;
+} */
+.portfolio_ref img{
+    width: 20%;
+    margin-bottom: 20px;
+}
+
+ h3{
+    color: rgb(255, 255, 255);
+    margin-bottom: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  
+}
+
+.form_input{
+    margin-bottom: 15px;
+}
+
+.form_input input[type="text"]{
+    width: 250px;
+    padding: 12px 20px;
+    border: 1px solid #eee;
+}
+
+.form_input textarea{
+    width: 250px;
+    padding: 12px 20px;
+    height: 80px;
+    resize: none;
+    border: 1px solid #ccc;
+}
+
+ .interest{
+    background: rgba(2, 8, 27, 0.808);
+}
+
+.interest_wrapper{
+    display: flex;
+     margin-top: 10px; 
+}   
+
+.interest1{
+    width: 25%;
+}
+
+ .interest1 img{
+    width: 45%;
+    margin-bottom: 15px;
+    display: inline-block;
+}  
+
+.footer{
+    width: 100%;
+    text-align: center;
+    background: rgba(2, 8, 27, 0.808);
+    padding: 20px 0;
+}
+
+.footer a{
+    color: white;
+}

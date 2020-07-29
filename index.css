@@ -1,44 +1,36 @@
 
+
 *{
+
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-    outline: none;	
+	outline: none;	
 
-	
-}
-.wrapper{
-	background-image: url(./image/69751098_2943827569023297_6594511984782213120_n.jpg);
-	background-position: center;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-body{
-	background-image: url(./image/69751098_2943827569023297_6594511984782213120_n.jpg);
-	background-position: center;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-size: cover;
 }
 
 
 .wrapper{
-	color: aliceblue;
+	background-image: url(/images/How-to-Get-More-Productivity-From-a-Larger-Team-1180x664.png);
 	position: absolute;
 	top: 50%;
-    left: 50%;
+	left: 50%;
 	transform: translate(-50%, -50%);
-	max-width: 550px;
+	max-width: 350px;
 	width: 100%;
-	padding:25px; 
-	border-radius: 50px;
+	padding: 25px; 
+	border-radius: 5px;
+	box-shadow: 4px 4px 2px rgb(255, 255, 255);
+	
 }
 
 .wrapper .input_field{
-	margin-bottom: 50px;
+	margin-bottom: 10px;
 }
 
+.input_field .text{
+	color: white;
+}
 .wrapper .input_field input[type="text"],
 .wrapper textarea{
 	width: 100%;
@@ -46,18 +38,23 @@ body{
 	padding: 10px;
 }
 
+
+h2{
+	color: rgb(253, 248, 248);
+	text-align: center;
+	font-family: 'Courier New', Courier, monospace;
+}
+
 .wrapper textarea{
-	height: 100px;
+	height: 80px;
 	resize: none;
 }
 
 .wrapper .btn input[type="submit"]{
-    border: 0;
-    border-radius: 20px;
+	border: 0;
 	margin-top: 15px;
 	padding: 10px;
-	width: 40%;
-	color: white;
-	background: rgb(49, 20, 216);
+	width: 55%;
+	background: #120e2e;
 }
 
